@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart page</title>
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+         <!-- Header -->
+        <header class="header">
+          <div class="header-left">
+            <button class="left-arrow" ><img src="./assets/images/img/arrow.png" alt="" class="arrow-icon"></button> 
+            <img src="./assets/images/img/logo.png" alt="Logo" class="logo">
+            <div class="auth-dropdown">
+              <span class="auth-link">Register/Sign In</span>
+              <div class="auth-menu">
+                <a href="#">Register</a>
+                <a href="#">Sign In</a>
+              </div>
+            </div>
+          </div>
+          <nav class="nav">
+            <a href="./index.html" class="nav-link">Home</a>
+            <a href="#men" class="nav-link">Men</a>
+            <a href="#women" class="nav-link">Women</a>
+            <a href="#kids" class="nav-link">Kids</a>
+            <a href="#accessories" class="nav-link">Accessories</a>
+            <div class="nav-dropdown">
+              <span class="nav-link">More</span>
+              <div class="nav-menu">
+                <a href="#">Perfumes</a>
+                <a href="#">Jewelries</a>
+                <a href="#">Gym wears</a>
+                <a href="#">Vintage wears</a>
+                <a href="#">Sport wear</a>
+                <a href="#">Pyjamas</a>
+                <a href="#">Slippers</a>
+              </div>
+            </div>
+          </nav>
+    
+          <div class="header-right">
+            <div class="search-box">
+              <input type="text" placeholder="Search" class="search-input">
+              <button class="search-button">Q</button>
+            </div>
+            <div class="language-dropdown">
+              <span class="language">
+                <img src="./assets/icons/uk.png" alt="EN/Flag" class="flag"> EN/Currency
+              </span>
+              <div class="language-menu">
+                <a href="#">USD</a>
+                <a href="#">EUR</a>
+                <a href="#">GBP</a>
+              </div>
+            </div>
+            <div class="cart">
+              <img src="./assets/icons/cart.png" alt="Cart" class="cart-icon">
+              <span class="cart-counter">2</span>
+            </div>
+          </div>
+        </header>
+
+        
+        <nav class="breadcrumb">
+          <ol>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li class="active">Sneakers</li>
+          </ol>
+        </nav>
+        <div class="container">
+          <div class="product-details">
+            <div class="product-images">
+              <img src="./assets/images/img/Burberry_Shine.png" alt="Main Product" class="main-image">
+              <div class="thumbnail-images">
+                <img src="./assets/images/img/Burberry_Shine.png" alt="Thumbnail 1">
+                <img src="./assets/images/img/Burberry_Shine.png" alt="Thumbnail 2">
+                <img src="./assets/images/img/Burberry_Shine.png" alt="Thumbnail 3">
+                <img src="./assets/images/img/Burberry_Shine.png" alt="Thumbnail 4">
+              </div>
+              <div class="share">
+                <p>Share this product:</p>
+                <div class="social">
+                  <a href="#" class="social-icon"><img src="./assets/icons/insta.png" alt="Instagram"></a>
+                  <a href="#" class="social-icon"><img src="./assets/icons/whatsapp.png" alt="WhatsApp"></a>
+                  <a href="#" class="social-icon"><img src="./assets/icons/x.png" alt="Twitter"></a>
+              </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="item-image">
+                <h1>Burberry shine</h1>
+                <button class="heart">🤍</button>
+              </div>
+              
+              <p class="brand-name">Brand: <strong>FENDI</strong></p>
+              <div class="price-section">
+                <span class="price">$150</span>
+                <span class="original-price">$300</span>
+                <span class="discount">-50%</span>
+              </div>
+              <p class="stock">50 units left</p>
+              <p class="rating">+ Shipping fee may vary on location</p>
+              <p class="rating"><img src="./assets/icons/star1.png" alt="star Icon" class="icon" /> 1k+ rating</p>
+              <div class="quantity">
+                <p>Quantity: </p>
+                <button class="minus">-</button>
+                <input type="number" value="1" min="1" readonly>
+                <button class="plus">+</button>
+              </div>
+              <div class="size">
+                  <p>Size:</p>
+                  <button>20</button>
+                  <button>25</button>
+                  <button>32</button>
+                  <button>37</button>
+                  <h6>See all size guides</h6>
+                
+              </div>
+              <div class="color-picker">
+                <p>Color:</p>
+                <div class="color-options">
+                  <div class="color-option" style="background-color: #f5d1d7;"></div>
+                  <div class="color-option" style="background-color: #475fff;"></div>
+                  <div class="color-option" style="background-color: #ff4757;"></div>
+                  <div class="color-option" style="background-color: #222222;"></div>
+                </div>
+              </div>
+              
+              <div class="actions">
+                <button class="checkout-btn" > Save for later</button>
+                <button class="buy-now" onclick="redirectToCheckOut()">Buy now</button>
+              </div>
+              <p class="pickup">Pickup & Pay on collection available</p>
+            </div>
+          </div>
+          <div class="delivery-returns">
+            <div class="delivery">
+              <h2>Delivery & Returns</h2>
+              <div class="location-select">
+                <label for="location"><h4>Location</h4></label>
+                <select id="location">
+                  <option>Location</option>
+                  <option>Addis Ababa</option>
+                </select>
+                
+                <select id="sub-location">
+                  <option>Sub-location</option>
+                  <option>Bole</option>
+                </select>
+              </div>
+              
+              <div class="icon-text">
+                <img src="./assets/icons/iconoir_delivery-truck.png" alt="Delivery Icon" class="icon" />
+                <h3>Delivery</h3>
+              </div>
+              <div class="par ">
+                <p>Estimated delivery time is 1-12 business days</p>
+                <p><strong>For Same-Day-Delivery:</strong> Please place your order before 12pm</p>
+                <p><strong>Next-Day-Delivery:</strong> Orders placed after 12pm will be delivered the next day.</p>
+                <p><strong>Note:</strong> Availability may vary by location</p>
+                
+              </div>
+            </div>
+            <div class="return-policy">
+              <div class="icon-text">
+                <img src="./assets/icons/hugeicons_delivery-return-01.png" alt="Return Policy Icon" class="icon" />
+                <h3>Return policy</h3>
+              </div>
+              <div class="par">
+                <p><strong>Guaranteed 7-day return policy</strong></p>
+                <p>
+                  For details about return shipping options, please visit our 
+                  <a href="#" class="contact-link">Contact page</a>
+                </p>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        <div class="Product-info">
+          <!-- Tabs Section -->
+          <div class="tabs">
+            <button class="tab active">Overview</button>
+            <button class="tab">Description</button>
+            <button class="tab">Warranty</button>
+            <button class="tab">Reviews</button>
+          </div>
+        
+          <!-- Overview Content -->
+          <div class="tab-content ">
+            <ul>
+              <li>Available in a wide range of colors, patterns, and themes to appeal to kids.</li>
+              <li>Rubber outsoles with good traction to prevent slips and falls.</li>
+              <li>Built-in arch support to help maintain healthy foot development.</li>
+              <li>Soft insoles and adequate padding to support growing feet.</li>
+            </ul>
+          </div>
+        
+          <!-- Similar Items Section -->
+          <h2>Similar items you may like</h2>
+          <div class="similar-items">
+            <div class="item-card">
+              <div class="item-image">
+                <button class="heart">🤍</button>
+                <img src="./assets/images/img/blue-shoe.png" alt="Butlin Blue" >
+                <span class="stock-status">In Stock</span>
+                
+              </div>
+              <div class="Product-details">
+                <div class="row">
+                    <div class="category-tag">Kids</div>
+                    <div class="rating"><img src="./assets/icons/star1.png" alt="star Icon" class="icon" />  2k+ rating</div>
+                </div>
+                <h3 class="product-title">Butlin Blue</h3>
+                <p class="brand-name">FENDI</p>
+                <div class="row">
+                    <p class="price">$120</p>
+                    <button class="add-to-cart-btn" onclick="redirectToCart()">Add to cart</button>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="item-card">
+              <div class="item-image">
+                <button class="heart">🤍</button>
+                <img src="./assets/images/img/pink-cherry_shoe.png" alt="Pink Cherry">
+                <span class="stock-status">In Stock</span>
+              </div>
+              <div class="Product-details">
+                <div class="row">
+                    <div class="category-tag">Kids</div>
+                    <div class="rating"><img src="./assets/icons/star1.png" alt="star Icon" class="icon" /> 2k+ rating</div>
+                </div>
+                <h3 class="product-title">Pink Cherry</h3>
+                <p class="brand-name">FENDI</p>
+                <div class="row">
+                    <p class="price">$180</p>
+                    <button class="add-to-cart-btn" onclick="redirectToCart()">Add to cart</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="footer-container">
+             <div class="footer-column">
+                  <div class="footer-logo">
+                      <div class=""><img src="./assets/images/img/footer_logo.png" alt=""></div>
+                  </div>
+                  <!-- Social Icons -->
+                  <div class="footer-social">
+                      <a href="#" class="social-icon"><img src="./assets/icons/insta.png" alt="Instagram"></a>
+                      <a href="#" class="social-icon"><img src="./assets/icons/whatsapp.png" alt="WhatsApp"></a>
+                      <a href="#" class="social-icon"><img src="./assets/icons/x.png" alt="Twitter"></a>
+                  </div>
+             </div> 
+            
+            
+            <!-- Footer Links Section -->
+            <div class="footer-links">
+              <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">News & Blog</a></li>
+                  <li><a href="#">Location</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3>Products</h3>
+                <ul>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Store</a></li>
+                  <li><a href="#">Features</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3>Discover</h3>
+                <ul>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Customers</a></li>
+                  <li><a href="#">Affiliates</a></li>
+                </ul>
+              </div>
+            </div>
+        
+            
+          </div>
+      </footer> 
+      <script src="./assets/js/script.js"></script>
+    </body>
+</html>

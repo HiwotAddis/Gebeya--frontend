@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout page</title>
+    <link rel="stylesheet" href="./assets/css/checkout.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <button class="left-arrow" ><img src="./assets/images/img/arrow.png" alt="" class="arrow-icon"></button>
+        <img src="./assets/images/img/logo.png" alt="Logo" class="logo">
+        <div class="auth-dropdown">
+          <span class="auth-link">Register/Sign In</span>
+          <div class="auth-menu">
+            <a href="#">Register</a>
+            <a href="#">Sign In</a>
+          </div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="#men" class="nav-link">Men</a>
+        <a href="#women" class="nav-link">Women</a>
+        <a href="#kids" class="nav-link">Kids</a>
+        <a href="#accessories" class="nav-link">Accessories</a>
+        <div class="nav-dropdown">
+          <span class="nav-link">More</span>
+          <div class="nav-menu">
+            <a href="#">Perfumes</a>
+            <a href="#">Jewelries</a>
+            <a href="#">Gym wears</a>
+            <a href="#">Vintage wears</a>
+            <a href="#">Sport wear</a>
+            <a href="#">Pyjamas</a>
+            <a href="#">Slippers</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-right">
+        <div class="search-box">
+          <input type="text" placeholder="Search" class="search-input">
+          <button class="search-button">Q</button>
+        </div>
+        <div class="language-dropdown">
+          <span class="language">
+            <img src="./assets/icons/uk.png" alt="EN/Flag" class="flag"> EN/Currency
+          </span>
+          <div class="language-menu">
+            <a href="#">USD</a>
+            <a href="#">EUR</a>
+            <a href="#">GBP</a>
+          </div>
+        </div>
+        <div class="cart">
+          <img src="./assets/icons/cart.png" alt="Cart" class="cart-icon">
+          <span class="cart-counter">2</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="checkout-container">
+        <!-- Shipping Address Section -->
+        <div class="shipping-address">
+          <h2>Shipping Address</h2>
+          <form>
+            <div class="form-group">
+              <label for="name"><b>Name</b></label>
+              <input type="text" id="name" placeholder="First & Last Name" />
+            </div>
+            <div class="form-group">
+              <label for="address1"><b>Address 1</b></label>
+              <input type="text" id="address1" placeholder="412, Dubai St" />
+            </div>
+            <div class="form-group">
+              <label for="address2"><b>Address 2</b></label>
+              <input type="text" id="address2" placeholder="23rd, Boulevard Ave" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="city"><b>City</b></label>
+                <input type="text" id="city" placeholder="Enter City" />
+              </div>
+              <div class="form-group">
+                <label for="state"><b>State</b></label>
+                <select id="state">
+                  <option>Select State</option>
+                  <option>New York</option>
+                  <option>California</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="zip"><b>Zip</b></label>
+                <input type="text" id="zip" placeholder="Zip code" />
+              </div>
+            </div>
+          </form>
+        </div>
+      
+        <!-- Order Summary Section -->
+        <div class="order-summary">
+          <h2>Order Summary</h2>
+          <div class="order-item">
+            <img src="./assets/images/img/Burberry_Shine.png" alt="Product" />
+            <div>
+              <h3>Burberry shine</h3>
+              <p>FENDI</p>
+            </div>
+          </div>
+          <ul>
+            <li><span>Subtotal</span><span>$150</span></li>
+            <li><span>Shipping</span><span>$10</span></li>
+            <li><span>Tax</span><span>$5</span></li>
+          </ul>
+          <div class="total">
+            <span>Total</span>
+            <span>$165</span>
+          </div>
+          <button class="place-order">Place order</button>
+        </div>
+      </div>
+      
+
+      <div class="payment-container">
+        <h2>Payment method</h2>
+        
+        <!-- Payment Options -->
+        <div class="payment-options">
+          <button class="payment-option active">
+            <i class="icon-card"><img src="./assets/icons/card.png" alt=""></i>
+            Card
+          </button>
+          <button class="payment-option">
+            <i class="icon-wallet"><img src="./assets/icons/wallet.png" alt=""></i>
+            Wallet
+          </button>
+          <button class="payment-option">
+            <i class="icon-bank"><img src="./assets/icons/bank.png" alt=""></i>
+            Bank transfer
+          </button>
+        </div>
+        
+        <!-- Payment Form -->
+        <form class="payment-form">
+          <div class="form-group">
+            <label for="card-name"><b>Name on card</b></label>
+            <input type="text" id="card-name" placeholder="First & Last Name" />
+          </div>
+          <div class="form-group">
+            <label for="card-number"><b>Card number</b></label>
+            <input type="text" id="card-number" placeholder="0000 0000 0000 0000" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="expiry-month"><b>Expiry</b></label>
+              <select id="expiry-month">
+                <option>MM</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <!-- Add more months -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label>&nbsp;</label>
+              <select id="expiry-year">
+                <option>YYYY</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+                <!-- Add more years -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cvv"><b>CVV</b></label>
+              <input type="text" id="cvv" placeholder="CVV" />
+            </div>
+          </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+           <div class="footer-column">
+                <div class="footer-logo">
+                    <div class=""><img src="./assets/images/img/footer_logo.png" alt=""></div>
+                </div>
+                <!-- Social Icons -->
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><img src="./assets/icons/insta.png" alt="Instagram"></a>
+                    <a href="#" class="social-icon"><img src="./assets/icons/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#" class="social-icon"><img src="./assets/icons/x.png" alt="Twitter"></a>
+                </div>
+           </div> 
+          
+          
+          <!-- Footer Links Section -->
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3>About</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">News & Blog</a></li>
+                <li><a href="#">Location</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Products</h3>
+              <ul>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Features</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Discover</h3>
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Affiliates</a></li>
+              </ul>
+            </div>
+          </div>
+      
+          
+        </div>
+    </footer>
+      
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEBEYA</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <button class="hamburger" onclick="toggleNav()">☰</button> 
+        <img src="./assets/images/img/logo.png" alt="Logo" class="logo">
+        <div class="auth-dropdown">
+          <span class="auth-link">Register/Sign In</span>
+          <div class="auth-menu">
+            <a href="#">Register</a>
+            <a href="#">Sign In</a>
+          </div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="#men" class="nav-link">Men</a>
+        <a href="#women" class="nav-link">Women</a>
+        <a href="#kids" class="nav-link">Kids</a>
+        <a href="#accessories" class="nav-link">Accessories</a>
+        <div class="nav-dropdown">
+          <span class="nav-link">More</span>
+          <div class="nav-menu">
+            <a href="#">Perfumes</a>
+            <a href="#">Jewelries</a>
+            <a href="#">Gym wears</a>
+            <a href="#">Vintage wears</a>
+            <a href="#">Sport wear</a>
+            <a href="#">Pyjamas</a>
+            <a href="#">Slippers</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-right">
+        <div class="search-box">
+          <input type="text" placeholder="Search" class="search-input">
+          <button class="search-button">Q</button>
+        </div>
+        <div class="language-dropdown">
+          <span class="language">
+            <img src="./assets/icons/uk.png" alt="EN/Flag" class="flag"> EN/Currency
+          </span>
+          <div class="language-menu">
+            <a href="#">USD</a>
+            <a href="#">EUR</a>
+            <a href="#">GBP</a>
+          </div>
+        </div>
+        <div class="cart">
+          <img src="./assets/icons/cart.png" alt="Cart" class="cart-icon">
+          <span class="cart-counter">2</span>
+        </div>
+      </div>
+    </header>
+    <!--Hero section-->
+    <section class="hero-section">
+    <div class="hero-container">
+        <!-- Hero Left -->
+        <div class="hero-left">
+        <h1 class="hero-title">Gebeya</h1>
+        <img src="./assets/images/img/shoee.jpeg" alt="Shoe" class="hero-img hero-img-shoe">
+        </div>
+
+        <!-- Hero Center -->
+        <div class="hero-center">
+        <img src="./assets/images/img/person.jpg" alt="Person" class="hero-img hero-img-center">
+        <button class="hero-button">Explore Now</button>
+        </div>
+
+        <!-- Hero Right -->
+        <div class="hero-right">
+        <p class="hero-text">
+            Discover a world of convenience with our user-friendly platform, curated collections, and exceptional customer service.
+        </p>
+        <h1 class="hero-title">SHOP</h1>
+        <img src="./assets/images/img/shirt.jpeg" alt="T-Shirt" class="hero-img hero-img-shirt">
+        </div>
+    </div>
+    </section>
+    <!--Latest collections-->
+    <section class="latest-collections">
+        <div class="latest-collections-header">
+            <h2>Latest Collections</h2>
+            <div class="arrows">
+                <button class="nav-arrow left-arrow">❮</button>
+                <button class="nav-arrow right-arrow">❯</button>
+            </div>
+        </div>
+        <div class="collections-wrapper">
+            
+
+            <!-- Product Cards -->
+            
+            <div class="product-card">
+              <div class="item-image">
+                <button class="heart">🤍</button>
+                <div class="product-image-container">
+                  <img src="./assets/images/img/french_kiss_bag.png" alt="Butlin Blue" class="product-image">
+                  
+                </div>
+                <span class="stock-status">In Stock</span>
+              </div>
+                <div class="product-details">
+                    <div class="row">
+                        <div class="category-tag">Women</div>
+                        <div class="rating"><img src="./assets/icons/star1.png" alt="star Icon" class="icon" /> 2k+ rating</div>
+                    </div>
+                    <h3 class="product-title">French Kiss Bag</h3>
+                    <p class="brand-name">ALDO</p>
+                    <div class="row">
+                        <p class="price">$500</p>
+                        <button class="add-to-cart-btn" onclick="redirectToCart()">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+              <div class="item-image">
+                <button class="heart">🤍</button>
+                <div class="product-image-container">
+                  <img src="./assets/images/img/Burberry_Shine.png" alt="Butlin Blue" class="product-image">
+                  
+                </div>
+                <span class="stock-status">In Stock</span>
+              </div>
+                <div class="product-details">
+                    <div class="row">
+                        <div class="category-tag">Kids</div>
+                        <div class="rating"><img src="./assets/icons/star1.png" alt="star Icon" class="icon" /> 2k+ rating</div>
+                    </div>
+                    <h3 class="product-title">Burberry Shine</h3>
+                    <p class="brand-name">FENDI</p>
+                    <div class="row">
+                        <p class="price">$150</p>
+                        <button class="add-to-cart-btn" onclick="redirectToCart()">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+              <div class="item-image">
+                <button class="heart">🤍</button>
+                <div class="product-image-container">
+                  <img src="./assets/images/img/Alvero_Gown.png" alt="Alvero_Gown" class="product-image">
+                  
+                </div>
+                <span class="stock-status">In Stock</span>
+              </div>
+                <div class="product-details">
+                    <div class="row">
+                        <div class="category-tag">Women</div>
+                        <div class="rating"><img src="./assets/icons/star1.png" alt="star Icon" class="icon" /> 2k+ rating</div>
+                    </div>
+                    <h3 class="product-title">Alvero Gown</h3>
+                    <p class="brand-name">DIVINE</p>
+                    <div class="row">
+                        <p class="price">$300</p>
+                        <button class="add-to-cart-btn" onclick="redirectToCart()">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-filters">
+            <button class="filter-btn">Men</button>
+            <button class="filter-btn active">Women</button>
+            <button class="filter-btn">Kids</button>
+            <button class="filter-btn">Perfumes</button>
+            <button class="filter-btn">Sport</button>
+            <button class="filter-btn">Jewelry</button>
+        </div>    
+            
+        <div class="collection-container">
+            <div class="collection-item">
+                <img src="./assets/images/img/shoe.png" alt="Shoes">
+                <h3>Shoes</h3>
+                <p>See all collections</p>
+            </div>
+            <div class="collection-item">
+                <img src="./assets/images/img/Bag.png" alt="Bags">
+                <h3>Bags</h3>
+                <p>See all collections</p>
+            </div>
+            <div class="collection-item">
+                <img src="./assets/images/img/Jacket.webp" alt="Jackets">
+                <h3>Jackets</h3>
+                <p>See all collections</p>
+            </div>
+            <div class="collection-item">
+                <img src="./assets/images/img/lingrae.png" alt="Lingerie">
+                <h3>Lingerie</h3>
+                <p>See all collections</p>
+            </div>
+            <div class="collection-item">
+                <img src="./assets/images/img/Belts.png" alt="Belts">
+                <h3>Belts</h3>
+                <p>See all collections</p>
+            </div>
+            <div class="collection-item">
+                <img src="./assets/images/img/street_wear.png" alt="Street Wear">
+                <h3>Street Wear</h3>
+                <p>See all collections</p>
+            </div>
+            <div class="collection-item">
+                <img src="./assets/images/img/sunglasses.webp" alt="Sunglasses">
+                <h3>Sunglasses</h3>
+                <p>See all collections</p>
+            </div>
+            <div class="collection-item">
+                <img src="./assets/images/img/sun_wear.webp" alt="Sun Wear">
+                <h3>Sun Wear</h3>
+                <p>See all collections</p>
+            </div>
+            <div class="collection-item">
+                <img src="./assets/images/img/hat.png" alt="Hats">
+                <h3>Hats</h3>
+                <p>See all collections</p>
+            </div>
+            <div class="collection-item">
+                <img src="./assets/images/img/slippers.png" alt="Slippers">
+                <h3>Slippers</h3>
+                <p>See all collections</p>
+            </div>
+            <div class="collection-item">
+                <img src="./assets/images/img/wigs.webp" alt="Wigs">
+                <h3>Wigs</h3>
+                <p>See all collections</p>
+            </div>
+            <div class="collection-item">
+                <img src="./assets/images/img/costmetics.png" alt="Cosmetics">
+                <h3>Cosmetics</h3>
+                <p>See all collections</p>
+            </div>
+            
+        </div>
+        <div class="see-more-container">
+            <button class="see-more-btn">See more <img src="./assets/icons/arrow.png" alt=""></button>
+        </div>     
+    </section>
+
+    <div class="summer-collection-banner">
+        <div class="banner-content">
+          <h2>Our Curated Summer<br> Collection</h2>
+          <p>
+            Explore our curated summer collection <br>featuring trending styles, vibrant
+            colors, and </br>lightweight fabrics perfect for long days and <br/>nights.
+          </p>
+          <button class="explore-button">Explore Now</button>
+          
+        </div>
+    </div>
+
+    <div class="browse-category">
+        <div class="latest-collections-header">
+            <h2>Browse by category</h2>
+            <div class="arrows">
+                <button class="nav-arrow left-arrow">❮</button>
+                <button class="nav-arrow right-arrow">❯</button>
+            </div>
+        </div>
+        <div class="category-carousel">
+          
+            <div class="carousel-items">
+                <div class="category-item">
+                  <div class="image-section">
+                    <img src="./assets/images/img/casual_shirt.png" alt="Casual wear">
+                  </div>
+                  <div class="text-section">
+                    <h3>Casual wear</h3>
+                    <p>Over 20 categories in stock</p>
+                  </div>
+                </div>
+                <div class="category-item">
+                  <div class="image-section">
+                    <img src="./assets/images/img/vintage_dress.png" alt="Vintage">
+                  </div>
+                  <div class="text-section">
+                    <h3>Vintage</h3>
+                    <p>Over 31 categories in stock</p>
+                  </div>
+                </div>
+                <div class="category-item">
+                  <div class="image-section">
+                    <img src="./assets/images/img/beauty_products.png" alt="Beauty products">
+                  </div>
+                  <div class="text-section">
+                    <h3>Beauty products</h3>
+                    <p>Over 24 categories in stock</p>
+                  </div>
+                </div>
+                <div class="category-item">
+                  <div class="image-section">
+                    <img src="./assets/images/img/gym_wears.webp" alt="Gym wears">
+                  </div>
+                  <div class="text-section">
+                    <h3>Gym wears</h3>
+                    <p>Over 62 categories in stock</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+           <div class="footer-column">
+                <div class="footer-logo">
+                    <div class=""><img src="./assets/images/img/footer_logo.png" alt=""></div>
+                </div>
+                <!-- Social Icons -->
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><img src="./assets/icons/insta.png" alt="Instagram"></a>
+                    <a href="#" class="social-icon"><img src="./assets/icons/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#" class="social-icon"><img src="./assets/icons/x.png" alt="Twitter"></a>
+                </div>
+           </div> 
+          
+          
+          <!-- Footer Links Section -->
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3>About</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">News & Blog</a></li>
+                <li><a href="#">Location</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Products</h3>
+              <ul>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Features</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Discover</h3>
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Affiliates</a></li>
+              </ul>
+            </div>
+          </div>
+      
+          
+        </div>
+    </footer>
+      
+      
+    
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
